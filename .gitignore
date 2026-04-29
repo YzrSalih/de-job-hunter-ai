@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project secrets — never commit these
+backend/firebase-service-account.json
+.env

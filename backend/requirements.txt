@@ -1,0 +1,6 @@
+anthropic>=0.40.0
+firebase-admin>=6.5.0
+requests>=2.32.0
+python-dotenv>=1.0.0
+APScheduler>=3.10.4
+feedparser>=6.0.11
