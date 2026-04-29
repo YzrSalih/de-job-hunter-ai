@@ -220,3 +220,4 @@ __marimo__/
 # Project secrets — never commit these
 backend/firebase-service-account.json
 .env
+frontend/.env
