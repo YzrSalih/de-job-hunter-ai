@@ -16,11 +16,15 @@ export interface Job {
   title: string;
   company: string;
   location: string;
+  country?: string;
   url: string;
-  source: "arbeitsagentur" | "indeed";
+  source: string;
   description: string;
   posted_at: string;
   scraped_at: string;
   status: JobStatus;
   analysis: JobAnalysis;
+  salary?: string;
+  workplace_type?: string;
+  tags?: string[];
 }

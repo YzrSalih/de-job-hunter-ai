@@ -1,0 +1,50 @@
+{
+  "name": "Salih Yazar",
+  "title": "Software Developer",
+  "years_of_experience": 3,
+  "primary_skills": [
+    "Node.js", "TypeScript", "JavaScript",
+    "React", "React Native", "Python",
+    "Java", "Spring Boot", "REST API",
+    "CI/CD", "Jest", "JUnit"
+  ],
+  "secondary_skills": [
+    "Redis", "PostgreSQL", "Oracle",
+    "AI Agents", "LLM", "RAG", "Vector Search",
+    "Firebase", "NativeWind", "Figma",
+    "ETL", "Alteryx", "Salesforce",
+    "BPMN", "UML", "Docker"
+  ],
+  "domains": [
+    "Frontend Development",
+    "Fullstack Development",
+    "iOS / Mobile Development",
+    "Backend Engineering",
+    "Software Development",
+    "AI / AI Agent Development",
+    "RAG / LLM Integration",
+    "Data Pipelines",
+    "Distributed Systems"
+  ],
+  "target_roles": [
+    "Frontend Developer",
+    "Full Stack Developer",
+    "Mobile Developer",
+    "React Native Developer",
+    "Software Developer",
+    "AI Developer",
+    "AI Engineer",
+    "Backend Developer",
+    "Software Engineer"
+  ],
+  "languages": {
+    "english": "fluent",
+    "german": "none"
+  },
+  "requirements": {
+    "must_be_english_friendly": true,
+    "german_required_is_dealbreaker": true,
+    "open_to_remote": true,
+    "target_country": "Germany"
+  }
+}

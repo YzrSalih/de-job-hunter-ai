@@ -4,6 +4,8 @@ from deduplication import make_job_id, is_duplicate
 from firebase_config import get_db
 from datetime import datetime
 
+POLAND_SOURCES = {"nofluffjobs"}
+
 
 def run_pipeline():
     print(f"\n{'='*50}")
@@ -31,18 +33,21 @@ def run_pipeline():
             skipped_analysis += 1
             continue
 
+        # German language requirement is always a dealbreaker
         if analysis.get("german_required"):
             print(f"[Pipeline] Skipped (German required): {job['title']}")
             continue
 
-        if not analysis.get("is_english_friendly"):
+        # For Polish jobs (candidate already there): skip English-friendly check
+        is_poland_job = job.get("source") in POLAND_SOURCES
+        if not is_poland_job and not analysis.get("is_english_friendly"):
             print(f"[Pipeline] Skipped (not English-friendly): {job['title']}")
             continue
 
         doc = {
             **job,
             "analysis": analysis,
-            "status": "new",  # Kanban: new → applied → interview → rejected
+            "status": "new",
             "job_id": job_id,
         }
 
